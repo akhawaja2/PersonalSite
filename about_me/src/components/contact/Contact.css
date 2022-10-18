@@ -1,6 +1,31 @@
-.Contact {
-    position: relative;
-    top: -910px;
-    right: -320px;
-    
+.formbox {
+    margin: auto;
+    width: 50%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.contact
+{
+    width: 80%;
+
+}
+
+.head {
+    margin: auto;
+    width: 50%;
+    font-size: 50px;
+}
+
+.bottom {
+    margin: auto;
+    width: 50%;
+    font-size: 50px;
+}
+.foot {
+    margin:auto;
+    width: 50%;
+    font-size: 30px;
+    text-align: center;
+    padding: 30px;
 }

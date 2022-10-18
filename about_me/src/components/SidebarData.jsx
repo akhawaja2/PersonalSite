@@ -7,11 +7,6 @@ import WorkspacesIcon from '@mui/icons-material/Workspaces';
 
 export const SidebarData = [
     {
-        title: "Home",
-        icon: <HomeIcon />, 
-        link: "/home"
-    },
-    {
         title: "About Me",
         icon: <InfoIcon/>, 
         link: "/about"

@@ -11,8 +11,9 @@ body {
 
 .Sidebar {
   height: 100%;
-  width: 300px;
+  width: 200px;
   background-color: lightblue;
+  min-width: 200px;
 }
 
 .SidebarList {

@@ -1,6 +1,7 @@
 .About {
-    position: absolute;
-    left: 100;
-    right: -320px;
-    
+    height:100vh;
+    left:500px;
+    overflow: scroll;
+    padding: 1em;
+
 }
