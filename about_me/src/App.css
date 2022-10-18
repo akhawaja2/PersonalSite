@@ -1,0 +1,45 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.Sidebar {
+  height: 100%;
+  width: 300px;
+  background-color: lightblue;
+}
+
+.SidebarList {
+  height: auto;
+  padding: 0;
+  width: 100%;
+}
+.SidebarList .row {
+  width: 80%;
+  height: 60px;
+  list-style-type: none;
+  margin: 0%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SidebarList .row:hover {
+  cursor: pointer;
+  background-color: #385170;
+}
+.row #icon {
+ flex: 30%;
+ display:grid;
+ place-items: center;
+}
+.row #title {
+  flex: 70%;
+ }
+ 
