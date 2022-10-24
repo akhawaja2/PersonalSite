@@ -1,3 +1,4 @@
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -12,7 +13,7 @@ body {
 .Sidebar {
   height: 100%;
   width: 200px;
-  background-color: lightblue;
+  background-color: black ;
   min-width: 200px;
 }
 
@@ -43,4 +44,33 @@ body {
 .row #title {
   flex: 70%;
  }
- 
+
+ .fadeIn {
+  animation: 1.5s fadeIn forwards;
+}
+
+.fadeOut {
+  animation: 1.5s fadeOut forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    transform: translate(-20px, 0);
+    opacity: 0;
+  }
+}
