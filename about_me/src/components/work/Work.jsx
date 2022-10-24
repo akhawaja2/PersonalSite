@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default function Work() {
     return  (
-        <div className = "Work">
+        <div className = "h-4/5 w-4/5 lg:w-4/5 p-10 mt-6 lg:mt-0 text-gray-900 leading-normal bg-white border border-gray-400 border-rounded">
             <h2> Work Experience </h2>
             <div>
                 <h3> Wiss - Tech Advisory</h3>

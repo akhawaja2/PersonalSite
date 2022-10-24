@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export default function About() {
     return (
-    <div className = "About">
+    <div className = "w-full ">
         <h2> Who am I?</h2>
         <p>
             The name's Abu Khawaja. I was both in North New Jersey and always loved computers growing up. 

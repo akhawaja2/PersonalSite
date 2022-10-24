@@ -1,7 +1,6 @@
 //https://herotofu.com/solutions/guides/react-contact-form
 
 import React, { useState } from "react";
-import { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faLinkedin,
@@ -12,16 +11,6 @@ import {
 const FORM_ENDPOINT = "https://public.herotofu.com/v1/652bbc00-4f01-11ed-8970-6943e4ac8982"; // TODO - fill on the later step
 
 const ContactForm = () => {
-    //Enabling TailWind CSS
-    useEffect(() => {
-        if (document) {
-            const stylesheet = document.createElement("link");
-            stylesheet.rel = "stylesheet";
-            stylesheet.href = "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
-
-            document.head.appendChild(stylesheet);
-        }
-    }, []);
     const [submitted, setSubmitted] = useState(false);
     const handleSubmit = () => {
         setTimeout(() => {
@@ -32,16 +21,16 @@ const ContactForm = () => {
     if (submitted) {
         return (
             <>
-                <div className="text-2xl">Thank you!</div>
-                <div className="text-md">We'll be in touch soon.</div>
+                <div class="text-2xl">Thank you!</div>
+                <div class="text-md">We'll be in touch soon.</div>
             </>
         );
     }
 
     return (
-        <div className="contact">
-            <h1 className="head">Contact me below</h1>
-            <div className="formbox">
+        <div className="w-full p-3">
+            <h1 className="text-5xl p-3">Contact me below</h1>
+            <div className="border p-3 border-black border-rounded">
                 <form
                     action={FORM_ENDPOINT}
                     onSubmit={handleSubmit}
@@ -83,26 +72,27 @@ const ContactForm = () => {
                         </button>
                     </div>
                 </form>
-            </div>
-            <div className="bottom">
-                <h1 className="head">Social Follow</h1>
+                <div class="">
+                <h1 class="head">Social Follow</h1>
                 <a href="https://www.linkedin.com/in/abu-khawaja/"
-                    className="foot">
+                    class="foot">
                     <FontAwesomeIcon icon={faLinkedin} size="3x" />
                 </a>
                 <a href="https://www.github.com/akhawaja2"
-                    className="foot">
+                    class="foot">
                     <FontAwesomeIcon icon={faGithub} size="3x" />
                 </a>
                 <a href="https://www.github.com/akhawaja2"
-                    className="foot">
+                    class="foot">
                     <FontAwesomeIcon icon={faYoutube} size="3x" />
                 </a>
                 <a href="https://www.github.com/akhawaja2"
-                    className="foot">
+                    class="foot">
                     <FontAwesomeIcon icon={faFacebook} size="3x" />
                 </a>
             </div>
+            </div>
+            
         </div>
     );
 };
