@@ -6,7 +6,7 @@ import {SidebarData} from "./SidebarData.jsx"
 //https://codepen.io/robstinson/pen/bGwpNMV
 function Sidebar () {
       return (
-        <div className = "w-1/5 items-center h-full overflow-hidden text-gray-400 bg-gray-900 rounded ">
+        <div className = "w-fit:content flex-none items-center h-full overflow-hidden text-gray-400 bg-gray-900 rounded ">
           <ul className = "items-left w-full px-3 ">
             {SidebarData.map((val, key) => {
               return (
